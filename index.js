@@ -1,5 +1,4 @@
-const envReader = require('dotenv');
-envReader.config(); //reader.env and merges it into the process.env
+require('dotenv').config(); //reader.env and merges it into the process.env
 
 const server = require('./api/server.js');
 
