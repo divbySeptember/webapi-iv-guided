@@ -12,7 +12,7 @@ server.get('/', async (req, res) => {
   try {
     const shoutouts = await db('shoutouts');
     res.status(200).json({
-      messageOfTheDay: process.env.GREET,
+      messageOfTheDay: process.env.MOTD,
       shoutouts: []
     });
   } catch (error) {
